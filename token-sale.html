@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Fiatend</title>
+
+	<!-- Mobile Specific Metas -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="image/x-icon" href="images/fav-icon.png" rel="icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+	</head>
+	<body>
+
+		<!-- Start preloader -->
+		<div id="preloader">
+			<div class="preloader-box">
+				<img src="images/loader.png" alt="Loader">
+				<p class="loading">Loading</p>
+			</div>
+		</div>
+		<!-- End preloader -->
+
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-4 col-8 d-flex flex-center">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo.png" alt="Fiatend Logo"></a>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-8 col-md-8 col-4">
+						<div class="menu-toggle">
+							<span></span>
+						</div>
+						<div class="main-menu">
+							<div class="nav-menu text-right">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li class="menu-dropdwon active">
+										<a href="javascript:void(0)">Pages</a>
+										<ul>
+											<li><a href="about.html">About</a></li>
+											<li class="active"><a href="token-sale.html">Token Sale</a></li>
+											<li><a href="contact.html">Contact</a></li>
+											<li><a href="faq.html">FAQ</a></li>
+											<li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+											<li><a href="Terms-and-conditions.html">Terms and conditions</a></li>
+										</ul>
+									</li>
+									<li><a href="feature.html">Feature</a></li>
+									<li><a href="roadmap.html">Roadmap</a></li>
+									<li><a href="team.html">Team</a></li>
+								</ul>
+							</div>
+							<div class="login-box">
+								<a href="login.html" class="button">Sign in</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="page-banner text-center relative">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12">
+							<h1 class="page-title wow fadeInUp">Token Sale</h1>
+							<ul class="breadcum wow fadeInUp">
+								<li><a href="index.html">Home</a></li>
+								<li>Pages</li>
+								<li>Token Sale</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="bluish-purple relative overflow-h ptb-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12">
+							<div class="section-heading text-center">
+								<h6 class="sub-title text-uppercase wow fadeInUp">Token</h6>
+								<h2 class="title wow fadeInUp">Token Pre-Sale</h2>
+								<p class="wow fadeInUp">At Fiatend, we believe that everyone should have the freedom to earn, hold, spend, share and give their money - no matter who you are or where you come from.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-12 d-flex flex-center order-t-2 wow fadeInLeft">
+							<div class="token-info">
+								<h2 class="token-info-title">Information About Token</h2>
+								<ul class="token-info-list">
+									<li>
+										<span class="token-info-lable">Token Name</span>
+										<span class="token-info-val">Fiatend</span>
+									</li>
+									<li>
+										<span class="token-info-lable">Token Symbol</span>
+										<span class="token-info-val">FTE</span>
+									</li>
+									<li>
+										<span class="token-info-lable">Token Decimal</span>
+										<span class="token-info-val">18</span>
+									</li>
+									<li>
+										<span class="token-info-lable">Nominal Price</span>
+										<span class="token-info-val">1 FTE = 0.0000001 USD</span>
+									</li>
+									<li>
+										<span class="token-info-lable">Total Supply</span>
+										<span class="token-info-val">200BN FTE</span>
+									</li>
+									<li>
+										<span class="token-info-lable">Unsold Tokens</span>
+										<span class="token-info-val">Burn</span>
+									</li>
+									<li>
+										<span class="token-info-lable">Type of Chain</span>
+										<span class="token-info-val">Bsc-20</span>
+									</li>
+									<li>
+										<span class="token-info-lable">Smart contract</span>
+										<span class="token-info-val">0x9Fdff9D41fD69CEC105e1Db8280a3E06F5E3f9A0</span>
+									</li>
+									<li>
+										<span class="token-info-lable">Minimal transaction amount</span>
+										<span class="token-info-val">0.05 BNB</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-12 d-flex flex-center order-t-1 wow fadeInRight">
+							<div class="token-sale-counter text-center">
+									<p id="demo"></p>
+
+									<script>
+										// Set the date we're counting down to
+										var countDownDate = new Date("Apr 19, 2024 15:37:25").getTime();
+
+										// Update the count down every 1 second
+										var x = setInterval(function() {
+
+										// Get today's date and time
+										var now = new Date().getTime();
+											
+										// Find the distance between now and the count down date
+										var distance = countDownDate - now;
+											
+										// Time calculations for days, hours, minutes and seconds
+										var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+										var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+										var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+										var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+											
+										// Output the result in an element with id="demo"
+										document.getElementById("demo").innerHTML = 
+										days + " Days :  " + 
+										hours + " Hours : " + 
+										minutes + " Minutes : " + 
+										seconds + " Seconds ";
+											
+										// If the count down is over, write some text 
+										if (distance < 0) {
+											clearInterval(x);
+											document.getElementById("demo").innerHTML = "EXPIRED";
+										}
+										}, 1000);
+										</script>
+
+									</body>
+								</html>
+
+								<div class="row">
+									<div class="col-4 text-center">
+										<span class="token-slide-info">PRE-SALE</span>
+									</div>
+									<div class="col-4 text-center">
+										<span class="token-slide-info">SOFT CAP</span>
+									</div>
+									<div class="col-4 text-center">
+										<span class="token-slide-info">HARD CAP</span>
+									</div>
+								</div>
+								<div class="coins-progress">
+							        <span data-progress="10"></span>
+							    </div>
+							    <a href="#" class="button">Join &amp; Buy Token Now</a>
+							    <ul class="currency-card">
+							    	<li><a href="#"><img src="images/bitcoin.png" alt="bitcoin"></a></li>
+							    	<li><a href="#"><img src="images/visa.png" alt="visa"></a></li>
+							    	<li><a href="#"><img src="images/master-card.png" alt="master card"></a></li>
+							    </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="bluish-purple relative overflow-h pb-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12 col-lg-12 col-md-12">
+							<div class="section-heading text-center">
+								<h2 class="title wow fadeInUp">Tokenomics</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-6 wow fadeInLeft">
+							<div class="token-graph token-graph-first text-center">
+								<h3 class="distribution-title">Token Distribution</h3>
+								<img src="images/token-sale-1.png" alt="Graph">
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-6 wow fadeInRight">
+							<div class="token-graph text-center">
+								<h3 class="distribution-title">Use Of Proceeds</h3>
+								<img src="images/token-sale-2.png" alt="Graph">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer purple relative pt-100" id="footer">
+			<canvas id="footer-dots"></canvas>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<div class="section-heading text-center">
+							<h6 class="sub-title text-uppercase wow fadeInUp">CONTACT</h6>
+							<h2 class="title wow fadeInUp">Get In Touch</h2>
+							<p class="wow fadeInUp">If you have any query or concern please let us know.</p>
+						</div>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<ul class="contact-link wow fadeInUp">
+							<li>
+								<span class="contact-icon"><img src="images/mail.png" alt="Mail Icon"></span>
+								<a href="mailto:Hello@fiatend.com">Hello@fiatend.com</a>
+							</li>
+							<li>
+								<span class="contact-icon"><img src="images/twitter.png" alt="Twitter Icon"></span>
+								<a href="#">Join us on Twitter</a>
+							</li>
+							<li>
+								<span class="contact-icon"><img src="images/telegram.png" alt="Telegram Icon"></span>
+								<a href="#">Join us on Telegram</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<form method="post" class="get-touch contactfrm wow fadeInUp">
+						<div class="contactfrmmsg">Thank You! Your message has been sent.</div>
+							<div class="row">
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="form-group">
+										<input type="text" name="text" class="form-control" placeholder="Your Name*" required="">
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="form-group">
+										<input type="text" name="text" class="form-control" placeholder="Your Email*" required="">
+									</div>
+								</div>
+								<div class="col-xl-12 col-lg-12 col-md-12">
+									<div class="form-group">
+										<textarea class="form-control" placeholder="Your Message*"></textarea>
+									</div>
+								</div>
+								<div class="col-xl-12 col-lg-12 col-md-12 text-center">
+									<button class="button">Send Message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright mt-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-8 col-lg-8 col-md-9 order-r-2">
+							<p><small>Copyright©2023. Fiatend - All rights reserved</small></a></p>
+						</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/animation.js"></script>
+		<script src="js/footer-canvas.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>
