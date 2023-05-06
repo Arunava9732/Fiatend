@@ -471,3 +471,11 @@ form.get-touch {padding-top: 70px; max-width: 720px; margin: 0 auto;}
 .copyright ul li {display: inline-block; padding: 0px 10px;}
 .copyright ul li:first-child {padding-left: 0;}
 .copyright ul li:last-child {padding-right: 0;}
+.fa {
+    padding: 05px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
