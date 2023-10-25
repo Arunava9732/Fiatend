@@ -667,7 +667,15 @@
 					</div>
 				</div>
 			</div>
+			<div oncontextmenu="return false;">
+				Right-clicking on this element is disabled.
+			 </div>
 		</footer>
+		<script>
+			document.addEventListener("contextmenu", (event) => {
+			   event.preventDefault();
+			});
+		 </script>
 		
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
